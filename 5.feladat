@@ -6,3 +6,16 @@ b=np.array(['+', '-',''])
 for i in range(0,len(a)):
     for j in range(0,len(b)):
         print(a[i],b[j])
+
+
+def tomb(a,b):
+    c=np.empty([len(a)*len(b)],dtype='object')
+    hely=0
+    for i in range(0, len(a)):
+        for j in range(0, len(b)):
+            c[hely]=a[i],b[j]
+            hely+=1
+    return c
+
+a = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+b = np.array(['+', '-', ''])
