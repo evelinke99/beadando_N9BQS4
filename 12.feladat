@@ -1,10 +1,11 @@
 def primek(eddig):
-    lista=set(range(2,eddig+1))
+    lista=list(range(2,eddig+1))
     for i in range(2,eddig+1):
         if i in lista:
             n=i+i
             while n<=eddig:
-                lista.discard(n)
+                if n in lista:
+                    lista.remove(n)
                 n+=i
     return lista
 print(primek(1000))
