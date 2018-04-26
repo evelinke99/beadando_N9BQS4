@@ -1,1 +1,8 @@
-lista=list(range(2,101))
+lista=set(range(2,101))
+for i in range(2,101):
+    if i in lista:
+        n=i+i
+        while n<=100:
+            lista.discard(n)
+            n+=i
+print(lista)
