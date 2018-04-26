@@ -1,11 +1,11 @@
-def primek(eddig):
-    lista=list(range(2,eddig+1))
-    for i in range(2,eddig+1):
+def primek(sorszam):
+    lista=list(range(2,sorszam*100))
+    for i in range(2,sorszam*100):
         if i in lista:
             n=i+i
-            while n<=eddig:
+            while n<=sorszam*100:        #írtó lassúú
                 if n in lista:
                     lista.remove(n)
                 n+=i
-    return lista
-print(primek(1000))
+    return lista[sorszam-1]
+print(primek(10001))
