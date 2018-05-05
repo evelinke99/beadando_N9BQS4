@@ -5,3 +5,15 @@ def prim(szam):
         if szam % i == 0:
             return False
     return True
+
+def nik_prim(a):
+    n = 0
+    prim = 0
+    i = 2
+
+    while n<a:
+        if prim(i):
+            n+=1
+            prim = i
+        i+=1
+    return i-1
