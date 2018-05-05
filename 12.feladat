@@ -17,3 +17,5 @@ def nik_prim(a):
             prim = i
         i+=1
     return i-1
+    
+print(nik_prim(10001)
