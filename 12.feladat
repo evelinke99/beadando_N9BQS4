@@ -16,6 +16,6 @@ def nik_prim(a):                                           #KÉÉÉSZ*-*
             n+=1
             prim = i
         i+=1
-    return i-1
+    return prim
     
 print(nik_prim(10001)
