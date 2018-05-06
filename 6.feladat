@@ -4,4 +4,6 @@ szotar=dict(zip(abc,moorse))
 
 for i in szotar:
     print(i,szotar[i])
-
+   
+def fordit(szoveg):
+    szavak=szoveg.split(' ')
