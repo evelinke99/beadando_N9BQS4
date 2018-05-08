@@ -1,14 +1,16 @@
 import numpy as np
 import itertools
 
+#proba 1
 a=np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
 b=np.array(['+', '-',''])
 
 for i in range(0,len(a)):
     for j in range(0,len(b)):
         print(a[i],b[j])
+        
 
-
+#proba 2
 def tomb(a,b):
     c=np.empty([len(a)*len(b)],dtype='object')
     hely=0
@@ -22,5 +24,7 @@ a = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
 b = np.array(['+', '-', ''])
 print(tomb(a,b))
 
+#proba 3
 for i in itertools.product(b,repeat=8):
     print(i)
+
