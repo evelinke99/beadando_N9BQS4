@@ -10,7 +10,6 @@ def nik_prim(a):                                           #KÉÉÉSZ*-*
     n = 0
     prim = 0
     i = 2
-
     while n<a:
         if prim(i):
             n+=1
