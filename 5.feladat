@@ -27,4 +27,23 @@ print(tomb(a,b))
 #proba 3
 for i in itertools.product(b,repeat=8):
     print(i)
+    
+a = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+b = np.array(['+', '-', ''])
+
+for i in itertools.product(b,repeat=8):
+    j,k,c,d,e,f,g,h=i
+    print(i)
+
+#proba 4
+def listak(b):
+    s = []
+    for i in itertools.product(b, repeat=8):
+        for j in i:
+            s.append(j)
+    return(list(zip(s, a)))
+
+a=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+b='+','-',''
+print(listak(b))
 
