@@ -1,9 +1,31 @@
 abc=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 moorse=['.-','-...','-.-.','-..','.','..-.','--.','....','..','.---','-.-','.-..','--','-.','---','.--.','--.-','.-.','...','-','..-','...-','.--','-..-','-.--','--..']
-szotar=dict(zip(abc,moorse))
 
-for i in szotar:
-    print(i,szotar[i])
-   
-def fordit(szoveg):
-    szavak=szoveg.split(' ')
+szotar=dict(zip(abc,moorse))
+szotar2=dict(zip(morse,abc))
+
+def fordit_szoveg(szoveg):
+    szavak = szoveg.split(' ')
+    s=''
+    for szo in szavak:
+        for betu in szo:
+            s+=szotar[betu]+' '
+        s+='  '
+    return s
+
+def fordit_morse(szoveg):
+    szavak = szoveg.split('   ')
+    s=''
+    for szo in szavak:
+        for betu in szo.split(' '):
+            s+=szotar2[betu]
+        s+=' '
+    return s
+
+
+szoveg=input("szöveg: ")
+print(fordit_szoveg(szoveg))
+
+szoveg2=input("moorse: ")
+print(fordit_morse(szoveg2))
+
