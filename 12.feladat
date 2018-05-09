@@ -6,7 +6,7 @@ def prim(szam):
             return False
     return True
 
-def nik_prim(a):                                           #KÉÉÉSZ*-*
+def nik_prim(a):                                          
     n = 0
     prim = 0
     i = 2
